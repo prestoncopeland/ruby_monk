@@ -39,3 +39,14 @@ def kaprekar?(k)
   left_side = k_sq_ary.slice(0,k_sq_ary.size-n).join.to_i
   right_side + left_side == k
 end
+
+#solution from site
+def kaprekar?(k)
+  no_of_digits = k.to_s.size
+  square = (k ** 2).to_s
+
+  second_half = square[-no_of_digits..-1]
+  first_half = square.size.even? ? square[0..no_of_digits-1] : square[0..no_of_digits-2]
+
+  k == first_half.to_i + second_half.to_i
+end
