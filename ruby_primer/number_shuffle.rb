@@ -1,7 +1,7 @@
 =begin
 
 Problem Statement
-
+May 9, 2015
 Given a 3 or 4 digit number with distinct digits, return a sorted array of all the unique numbers that can be formed with those digits.
 Example:
 Given: 123
